@@ -8,8 +8,22 @@
     margin-right: 10px;
 }
 
+a:link{
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+
+}
+
+a:hover{
+    text-decoration: solid underline 1px;
+}
+
 body{
     background-color: #899499;
+    font-family: Garamond, serif;
 }
 
 h1{
@@ -18,6 +32,17 @@ h1{
 
 h2{
     padding-left:80px;
+    font-size: 32pt;
+    font-weight: 900;
+}
+
+ul{
+    list-style-type: square;
+    background: rgba(137,148,153,.2);
+    margin-right: 500px;
+    border-style: outset;
+    border-color: rgba(0,0,0,.5);
+
 }
 
 
@@ -26,6 +51,26 @@ h2{
     border-style: double;
 
 }
+
+.whatSection{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.whatText{
+    font-size: 16pt;
+}
+
+.whatQuote{
+    text-align: center;
+    font-family: serif;
+    font-size: 20pt;
+    border-style: solid none solid none;
+    border-width: 2px;
+    border-color: #36454F;
+
+}
+
 
 .loreSection{
     padding-bottom: 150px;
@@ -40,13 +85,12 @@ h2{
     text-shadow: 0 0 1px white;
 }
 
-.loreImg{
-
-}
 
 .loreText{
     display: flex;
     align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
     height: 50vh;
     font-size: 16pt;
     color: white;
@@ -58,29 +102,53 @@ h2{
 
 .whoSection{
     padding-top: 10px;
+    height: 450px;
     background-color: #2B2B2B;
     box-shadow: 0 0 10px 5px black;
+    color: #D5D5DA;
 }
 
 .whoHeader{
-    text-align:right;
+    text-align:center;
     padding-right: 250px;
-    color: white;
 }
 
 .whoText{
-    display: flex;
-    height: 40vh;
-    border-style: double;
-    padding-left: 10px;
-    color: white;
     font-size:16pt;
-    text-shadow: 2px 2px 5px grey;
+    padding-left: 850px;
+    margin-left: 30px
 }
 
-.whoImg{
-    width: 100%;
-    padding-top: 100px;
+
+.whoQuote{
+    text-align: right;
+    vertical-align: bottom;
+    font-family: serif;
+    font-size: 14pt;
+    border-style: solid none solid none;
+    border-width: 2px;
+    border-color: rgba(96,130,182,.3);
+}
+
+.ytVid{
+    float: left;
+    margin-left: 30px;
+}
+
+footer{
+    padding-top: 80px;
+    padding-right: 100px;
+}
+
+.logo{
+    text-align: center;
+    height: 110px;
+    width: 110px;
+    opacity: .6
+}
+
+.logo:hover{
+    opacity: 1;
 }
 
 
