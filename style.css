@@ -1,11 +1,19 @@
+/*Kind of struggling with good organization in a CSS file. */
+
 .right-image{
     float: right;
+    /*SYNTAX= float: none|left|right|initial|inherit;*/
     margin-left: 10px
 }
 
 .left-image{
     float: left;
     margin-right: 10px;
+}
+
+article{
+    width: 50%;
+    margin-left: 100px;
 }
 
 a:link{
@@ -23,17 +31,18 @@ a:hover{
 
 body{
     background-color: #899499;
-    font-family: Garamond, serif;
 }
 
 h1{
     text-align: center;
+    font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
 }
 
 h2{
     padding-left:80px;
     font-size: 32pt;
     font-weight: 900;
+    font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
 }
 
 ul{
@@ -45,16 +54,22 @@ ul{
 
 }
 
-
-.bannerImg{
-    width: 100%;
-    border-style: double;
-
+header{
+    height: 300px;
+    background-image: url(hkBanner.jpg);
+    background-position: center;
+    background-size: cover;
+    /*SYNTAX= background-size: auto|length|cover|contain|initial|inherit;*/
+    box-shadow: 0 0 10px 5px black;
+    /*SYNTAX= box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;*/
 }
 
 .whatSection{
+    width: 1200px;
     padding-left: 40px;
     padding-right: 40px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .whatText{
@@ -63,7 +78,7 @@ ul{
 
 .whatQuote{
     text-align: center;
-    font-family: serif;
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
     font-size: 20pt;
     border-style: solid none solid none;
     border-width: 2px;
@@ -73,40 +88,54 @@ ul{
 
 
 .loreSection{
-    height:700px;
+    height: 700px;
+    width: 1200px;
     padding-bottom: 150px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #3A4052;
-    border-style: inset;
-    border-color: grey;
+    border-style: groove;
+    border-color: black;
+}
+
+/*you can select a class then all descendant elements within that class. This concept could cut down on the amount of
+custom classes I need, but is a lot less descriptive or flexible.*/
+.loreSection img{
+    max-width: 50%;
+    max-height: 80%;
+    margin-left: 20px;
     box-shadow: 0 0 10px 5px black;
 }
 
 .loreHeading{
     color: #7BBED1;
     text-shadow: 0 0 1px white;
+    /*SYNTAX: text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit;*/
 }
 
 
 .loreText{
-    display: flex;
-    /*align-items: center;*/
-    padding-left: 40px;
-    padding-right: 40px;
-    height: 50vh;
-    font-size: 16pt;
+    max-width: 38%;
+    max-height: 80%;
+    margin-right: 100px;
+    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-size: 14pt;
+    font-weight: 700;
     color: white;
-    text-shadow: 0 0 1px grey;
+    text-shadow: 0 0 2px black;
+    text-align: left;
 }
-
-
-
 
 .whoSection{
     padding-top: 10px;
     height: 525px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #2B2B2B;
-    box-shadow: 0 0 10px 5px black;
     color: #D5D5DA;
+    border-style: groove;
+    border-color: black;
 }
 
 .whoHeader{
@@ -128,35 +157,34 @@ ul{
 .whoQuote{
     text-align: right;
     vertical-align: bottom;
-    font-family: serif;
-    font-size: 14pt;
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font-size: 13pt;
     border-style: solid none solid none;
+    /*SYNTAX [border style of]: Up right down left*/
     border-width: 2px;
     border-color: rgba(96,130,182,.3);
+    /*the 'a' in rgba messes with opacity*/
     margin-top: 150px;
 }
 
-.ytVid{
-    float: left;
-    margin-left: 10px;
-}
-
 footer{
-    padding-top: 20px;
-    padding-bottom: 30px;
-    padding-left: 40px;
+    width: 1675px;
+    height: 400px;
 }
 
 .logo{
-    height: 110px;
-    width: 110px;
+    max-height: 20%;
+    max-width: 10%;
     opacity: .6;
-    padding-left: 80px;
+    float: right;
+    padding-left: 10px;
     padding-right: 10px;
+    padding-top: 10px;
 }
 
 .logo:hover{
     opacity: 1;
+    /*The opacity of the logo is kind of dim, until you hover over it.*/
 }
 
 

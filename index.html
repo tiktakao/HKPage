@@ -7,12 +7,12 @@
     <link rel="icon" href="favicon.jpg" />
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
 </head>
 
 <body>
-    <h1>HOLLOW KNIGHT &#169;</h1>
-    <header><img src="hkBanner.jpg" alt="Game Cover Art" class="bannerImg"></header>
+    <header> <h1>HOLLOW KNIGHT</h1> </header>
+    <!--Header contains <h1> with a background image.-->
     <article>
 
         <section class="whatSection">
@@ -39,8 +39,8 @@
 
         <section class="loreSection">
             <h2 class="loreHeading">The World and Lore of Hollownest</h2>
-            <img src="hkMap.jpg" alt="Map of Hollownest" class="left-image" />
-            <p class="loreText">
+            <img src="hkMap.jpg" alt="Map of Hollownest" class="left-image loreImg"/>
+            <p class="loreText right-image">
                 The world of Hallownest was once occupied by bugs of different factions; but everything changed with the
                 arrival of the Pale King, the reincarnation of a felled wyrm. Wyrms are higher beings and are capable of not only
                 coherent thought, but a certain level of precognition. The Pale King came to Hallownest with the goal of uniting
@@ -65,31 +65,34 @@
         <section class="whoSection">
             <h2 class="whoHeader">Credits:</h2>
             <img src="hkProtag.png" alt="Vessel" class="right-image whoImg" />
-<!--            <iframe width="560" height="315" src="https://www.youtube.com/embed/WctVCLsRpWI?si=k682qh6yW0BOk-j-" title="YouTube video player" class="ytVid"></iframe>-->
 
             <ul class="whoText">
                 <li><b>Ari Gibson</b>......................Team Cherry</li>
                 <li><b>William Pellen</b>...............Team Cherry</li>
                 <li><b>David Kazi</b>......................Technical Director</li>
                 <li><b>Christopher Larkin</b>.......Sound & Music</li>
-
+                <!--alignment of something like credits might work better in a table.-->
             </ul>
 
 
-            <blockquote class="whoQuote">“No mind to think. No will to break. No voice to cry suffering. Born of God and Void.”<br>~The Pale King</blockquote>
+            <blockquote class="whoQuote"><i>“No mind to think. No will to break. No voice to cry suffering. Born of God and Void.”</i><br>~The Pale King</blockquote>
 
 
         </section>
     </article>
 
-<footer class="right-image">
-    <a href="https://store.playstation.com/en-us/product/UP1822-CUSA13632_00-HOLLOWKNIGHT18US"><img src="psLogo.png" alt="Playstation 4 Logo" class="logo"/></a>
-    <a href="https://www.nintendo.com/us/store/products/hollow-knight-switch/"><img src="switchLogo.png" alt="Nintendo Switch Logo" class="logo"/></a>
-    <a href="https://store.steampowered.com/app/367520/Hollow_Knight/"><img src="steamLogo.png" alt="Steam Logo" class="logo"/></a>
-    <a href="https://www.xbox.com/en-US/games/store/hollow-knight-voidheart-edition/9mw9469v91lm"><img src="xboxLogo.png" alt="Xbox Logo" class="logo"/> </a>
-</footer>
-
-
+    <footer>
+        <a href="https://store.playstation.com/en-us/product/UP1822-CUSA13632_00-HOLLOWKNIGHT18US"><img src="psLogo.png" alt="Playstation 4 Logo" class="logo"/></a>
+        <a href="https://www.nintendo.com/us/store/products/hollow-knight-switch/"><img src="switchLogo.png" alt="Nintendo Switch Logo" class="logo"/></a>
+        <a href="https://store.steampowered.com/app/367520/Hollow_Knight/"><img src="steamLogo.png" alt="Steam Logo" class="logo"/></a>
+        <a href="https://www.xbox.com/en-US/games/store/hollow-knight-voidheart-edition/9mw9469v91lm"><img src="xboxLogo.png" alt="Xbox Logo" class="logo"/> </a>
+    </footer>
 </body>
-
 </html>
+
+
+<!--The breakout concept for me during the making of this assignment was margin vs padding, and relative size. I made this assignment to look
+good at 100% scale; but when I opened my project on either of my monitors or on my laptop, it always looked different.
+I looked at a few websites and noticed what they look like when you zoom in and out. To get a similar affect I set the size
+of each container to an absolute value, and then set the elements within those containers as relative values of those absolute
+values.-->
